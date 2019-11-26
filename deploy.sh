@@ -1,25 +1,25 @@
 #!/usr/bin/env sh
 
-# 纭繚鑴氭湰鎶涘嚭閬囧埌鐨勯敊璇�
+# 缁绢収鍠曠换姘舵嚇濮橆厽鎷遍柟鑸电☉閸ゎ參鏌嗛崶褍鐓傞柣銊ュ閺佸﹦鎷犻敓锟�
 set -e
 
-# 鐢熸垚闈欐�佹枃浠�
+# 闁汇垻鍠愰崹姘舵濞嗘劧鎷锋担瑙勭�ù鐙呮嫹
 npm run docs:build
 
-# 杩涘叆鐢熸垚鐨勬枃浠跺す
+# 閺夆晜绋戦崣鍡涙偨閻旂鐏囬柣銊ュ閺嬪啯绂掔捄鎭掍粴
 cd docs/.vuepress/dist
 
-# 濡傛灉鏄彂甯冨埌鑷畾涔夊煙鍚�
+# 濠碘�冲�归悘澶愬及椤栨艾绲洪悽顖氬暙閸╁矂鎳涢鍕毎濞戞柨顦悡娆撳触閿燂拷
 # echo 'www.example.com' > CNAME
 
 git init
 git add -A
 git commit -m 'deploy'
 
-# 濡傛灉鍙戝竷鍒� https://<USERNAME>.github.io
+# 濠碘�冲�归悘澶愬矗閹存繄顏撮柛鎺炴嫹 https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
-# 濡傛灉鍙戝竷鍒� https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:wyx318/Fang.git master:gh-pages
+# 濠碘�冲�归悘澶愬矗閹存繄顏撮柛鎺炴嫹 https://<USERNAME>.github.io/<REPO>
+git push -f git@github.com:wyx318/panda01.git master:gh-pages
 
 cd -
