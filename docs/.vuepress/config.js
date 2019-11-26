@@ -1,7 +1,7 @@
 const path = require('path')
 module.exports = {
-  base: '/Fang/',
-  title: '轱辘UI',
+  base: '/panda01/',
+  title: 'panda UI',
   description: '一个好用的UI框架',
   themeConfig: {
     nav: [
